@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			#swcImage {
+				height: 300px;
+			}
+
+			.swcButton, #swcHeading, #swcParagraph {
+				position: relative;
+				z-index: 1;
+			}
+		</style>
+		<script>
+			var increment = 25;
+			var id = "swcImage";
+
+			function resetMargins() {
+				document.getElementById(id).style.marginLeft = "0px";
+				document.getElementById(id).style.marginTop = "0px";
+			}
+
+			function displayDate() {
+				document.getElementById("swcParagraph").innerHTML=Date();
+			}
+
+			function showBoat() {
+				document.getElementById(id).src="http://wpdotorg.files.wordpress.com/2008/11/boat.jpg";
+			}
+
+			function showCar() {
+				document.getElementById(id).src="http://images.hemmings.com/wp-content/uploads//2012/11/2012COPOCamaroconv_01_1500.jpg";
+			}
+
+			function moveDown() {
+				var topMargin = parseInt(document.getElementById(id).style.marginTop, 10);
+				document.getElementById(id).style.marginTop = (topMargin+increment).toString() + "px";
+			}
+
+			function moveUp() {
+				var topMargin = parseInt(document.getElementById(id).style.marginTop, 10);
+				document.getElementById(id).style.marginTop = (topMargin-increment).toString() + "px";
+			}
+
+			function moveRight() {
+				var leftMargin = parseInt(document.getElementById(id).style.marginLeft, 10);
+				document.getElementById(id).style.marginLeft = (leftMargin+increment).toString() + "px";
+			}
+
+			function moveLeft() {
+				var leftMargin = parseInt(document.getElementById(id).style.marginLeft, 10);
+				document.getElementById(id).style.marginLeft = (leftMargin-increment).toString() + "px";
+			}
+		</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h2 id="swcHeading">Hi there!</h2>
+		<p id="swcParagraph">The current date and time will display here when the button is pressed.</p>
+		<button class="swcButton" type="button" onclick="displayDate()">Date and Time</button>
+		<button class="swcButton" type="button" onclick="showBoat()">Show Boat</button>
+		<button class="swcButton" type="button" onclick="showCar()">Show Car</button>
+		<br><br>
+		<button class="swcButton" type="button" onclick="resetMargins()">Reset Margins</button>
+		<button class="swcButton" type="button" onclick="moveUp()">Move Up</button>
+		<button class="swcButton" type="button" onclick="moveDown()">Move Down</button>
+		<button class="swcButton" type="button" onclick="moveLeft()">Move Left</button>
+		<button class="swcButton" type="button" onclick="moveRight()">Move Right</button>
+		<br><br>
+		<img id="swcImage" src="http://wpdotorg.files.wordpress.com/2008/11/boat.jpg" />
+	</body>
+</html>

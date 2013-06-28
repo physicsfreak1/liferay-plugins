@@ -1,0 +1,10 @@
+@import "compass";
+
+#swcImage {
+	height: 300px;
+}
+
+.swcButton, #swcHeading, #swcParagraph {
+	position: relative;
+	z-index: 1;
+}

@@ -1,0 +1,127 @@
+{
+	"layoutTemplateId": "2_columns_ii",
+	"privatePages": [
+		{
+			"columns": [
+				[
+					{
+						"portletId": "3"
+					},
+					{
+						"portletId": "85"
+					},
+					{
+						"portletId": "58"
+					},
+					{
+						"portletId": "1_WAR_randombibleverseportlet"
+					},
+					{
+						"portletId": "1_WAR_tichportlet"
+					},
+					{
+						"portletId": "61"
+					},
+					{
+						"portletId": "50"
+					}
+				],
+				[
+					{
+						"portletId": "47"
+					},
+					{
+						"portletId": "56"
+					},
+					{
+						"portletId": "33"
+					},
+					{
+						"portletId": "39"
+					},
+					{
+						"portletId": "1_WAR_googlemapsportlet",
+						"portletPreferences": {
+							"mapAddress": "1400 Montefino Avenue, Diamond Bar, CA",
+							"mapInputEnabled": "true",
+							"directionsInputEnabled": "true",
+							"enableChangingTravelingMode": "true",
+							"height": "600"
+						}
+					},
+					{
+						"portletId": "48",
+						"portletPreferences": {
+							"src": "http://git-scm.com/book"
+						}
+					}
+				]
+			],
+			"friendlyURL": "/home",
+			"layouts": [
+				{
+					"friendlyURL": "/child-page-1",
+					"name": "Child Page 1",
+					"title": "Child Page 1",
+					"columns": [
+				[
+					{
+						"portletId": "3"
+					},
+					{
+						"portletId": "85"
+					}
+				],
+				[
+				]
+			]
+				},
+				{
+					"friendlyURL": "/child-page-2",
+					"name": "Child Page 2",
+					"title": "Child Page 2",
+					"columns": [
+				[
+					{
+						"portletId": "3"
+					},
+					{
+						"portletId": "85"
+					}
+				],
+				[
+				]
+			]
+				}
+			],
+			"name": "Welcome",
+			"title": "Welcome"
+		},
+		{
+			"columns": [
+				[
+					{
+						"portletId": "3"
+					},
+					{
+						"portletId": "85"
+					},
+					{
+						"portletId": "148"
+					},
+					{
+						"portletId": "114"
+					}
+				],
+				[
+					{
+						"portletId": "33"
+					}
+				]
+			],
+			"friendlyURL": "/blog",
+			"name": "Blog",
+			"title": "Adam's Blog"
+		}
+	]
+}
